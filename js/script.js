@@ -44,17 +44,17 @@ game2.addEventListener('click', function () {
 
     if (userRandom === pcRandom) {
         num.innerHTML = `
-        <p> hai PAREGGIATO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
+        <p> hai PAREGGIATO il tuo numero é "${userRandom}"... il computer aveva...</p>
         `
         imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
     }else if (userRandom > pcRandom) {
         num.innerHTML = `
-    <p> hai VINTO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
+    <p> hai VINTO il tuo numero é "${userRandom}"... il computer aveva...</p>
     `
         imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
     } else
     num.innerHTML = `
-    <p> hai PERSO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
+    <p> hai PERSO il tuo numero é "${userRandom}"... il computer aveva...</p>
     `
     imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
 
