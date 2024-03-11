@@ -49,7 +49,7 @@ game2.addEventListener('click', function () {
         num.innerHTML = `
     <p> hai VINTO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
     `
-    } else (userRandom < pcRandom)
+    } else
     num.innerHTML = `
     <p> hai PERSO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
     `
