@@ -35,24 +35,28 @@ button.addEventListener('click', function () {
 // }
 
 let gameDadi = document.getElementById('game2')
+let imgg = document.getElementById('theimg')
 game2.addEventListener('click', function () {
     let userRandom = getRndInteger(1, 6);
     let pcRandom = getRndInteger(1, 6)
-    console.log(userRandom)
-    console.log(pcRandom)
+    // console.log(userRandom)
+    // console.log(pcRandom)
 
     if (userRandom === pcRandom) {
         num.innerHTML = `
         <p> hai PAREGGIATO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
         `
+        imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
     }else if (userRandom > pcRandom) {
         num.innerHTML = `
     <p> hai VINTO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
     `
+        imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
     } else
     num.innerHTML = `
     <p> hai PERSO il tuo numero é "${userRandom}"... il computer aveva "${pcRandom}"</p>
     `
+    imgg.innerHTML= `<img src="img/${pcRandom}.svg" alt="">`
 
 
 
@@ -63,3 +67,5 @@ game2.addEventListener('click', function () {
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+/* <img src="img/" alt=""></img> */
