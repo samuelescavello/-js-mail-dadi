@@ -2,9 +2,9 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
 
-let email = ['samu@gmail.com', 'luca@gmail.com', 'nicola@gmail.com', 'woitec@gmail.com'];
+let email = ['samu@gmail.com', 'luca@gmail.com', 'lorenzo@gmail.com', 'nicola@gmail.com', 'woitec@gmail.com'];
 
-const button = document.querySelector('.btn')
+const button = document.querySelector('.btn-danger')
 button.addEventListener('click', function(){
     
     let userEmail = document.getElementById('mail').value ;
@@ -24,3 +24,9 @@ button.addEventListener('click', function(){
     }
 
 })
+
+
+// Generare un numero random da 1 a 6, sia per il giocatore sia
+//  per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
